@@ -5,6 +5,8 @@
 #include "object.h"
 #include "game.h"
 
+//asd lol zxc Ceo Merhaba xd
+
 // Initialize needed things
 //Meraba CEO
 //lololol
