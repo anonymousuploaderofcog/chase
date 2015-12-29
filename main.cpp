@@ -11,6 +11,9 @@
 const int SCREEN_WIDTH = 1280;
 const int SCREEN_HEIGHT = 720;
 
+
+//hmmmmmmmm chocolate
+
 SDL_Window* gWindow = NULL;
 SDL_Renderer* gRenderer = NULL;
 
