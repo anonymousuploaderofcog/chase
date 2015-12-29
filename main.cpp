@@ -6,7 +6,7 @@
 #include "game.h"
 
 // Initialize needed things
-//Meraba CEO
+
 const int SCREEN_WIDTH = 1280;
 const int SCREEN_HEIGHT = 720;
 
@@ -23,7 +23,7 @@ SDL_Event event;
 bool quitFlag = false;
 
 int main(int argc, const char * argv[]) {
-
+    
     // General Initialization
     SDL_Init(SDL_INIT_VIDEO);
     /*SDL_DisplayMode mode;
@@ -35,11 +35,11 @@ int main(int argc, const char * argv[]) {
     gWindow = SDL_CreateWindow("SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
     gRenderer = SDL_CreateRenderer(gWindow, -1, SDL_RENDERER_ACCELERATED | (SDL_RENDERER_PRESENTVSYNC * vSyncSwitch));
     Game myGame(gRenderer);
-
+    
     // Program / Game Loop
     while (!quitFlag) {
         quitFlag = myGame.GetFlag(0);
-
+        
         // Input
         while (SDL_PollEvent(&event) != 0)
         {
@@ -72,12 +72,12 @@ int main(int argc, const char * argv[]) {
         }
         keyState = SDL_GetKeyboardState(NULL);
         myGame.GetInput(keyState, xMouse, yMouse, mouseOne, mouseTwo);
-
+        
         // Run game
         myGame.Update();
         myGame.Render();
     }
-
+    
     // Close / Exit
     SDL_DestroyWindow(gWindow);
     SDL_Quit();
