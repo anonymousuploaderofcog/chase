@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
-#include <SDL2/SDL.h>
-#include <SDL2_image/SDL_image.h>
+#include "includer.h"
+
 
 
 // A general texture loading function

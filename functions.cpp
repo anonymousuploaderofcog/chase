@@ -11,7 +11,7 @@ SDL_Texture* loadTexture(std::string path, SDL_Renderer *ren, SDL_bool colorKey)
     SDL_Surface* loadedSurface = IMG_Load(path.c_str());
     if (loadedSurface == NULL)
     {
-        printf("Unable to load image %s! SDL Error: %s\n", path.c_str(), SDL_GetError());
+        std::cout << "Unable to load image " << path.c_str() << "! " << "SDL Error: " << SDL_GetError() << "\n";
     }
     else
     {
@@ -19,7 +19,7 @@ SDL_Texture* loadTexture(std::string path, SDL_Renderer *ren, SDL_bool colorKey)
         newTexture = SDL_CreateTextureFromSurface(ren, loadedSurface);
         if (newTexture == NULL)
         {
-            printf("Unable to create texture from %s! SDL Error: %s\n", path.c_str(), SDL_GetError());
+            std::cout << "Unable to create texture from " << path.c_str() << "! " << "SDL Error: " << SDL_GetError() << "\n";
         }
         SDL_FreeSurface(loadedSurface);
     }

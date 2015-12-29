@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <SDL2/SDL.h>
-#include <SDL2_image/SDL_image.h>
+#include "includer.h"
 #include "functions.h"
 #include "object.h"
 #include "game.h"
